@@ -6,8 +6,7 @@ export default defineConfig({
   adapter: vercel(),
   vite: {
     server: {
-      // Yeh list Vite ko bolegi ki saare trycloudflare links allowed hain
-      allowedHosts: ['.trycloudflare.com', 'localhost', '127.0.0.1']
+      allowedHosts: true // Yeh hai asli silver bullet jo check ko poori tarah bypass karega
     }
   }
 });

@@ -4,9 +4,8 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   output: 'server',
   adapter: vercel(),
-  vite: {
-    server: {
-      allowedHosts: true
-    }
+  server: {
+    host: true,
+    allowedHosts: true // Astro mein yeh setting bilkul top-level par aati hai!
   }
 });
